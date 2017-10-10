@@ -1,0 +1,23 @@
+{
+  "name": "@cjfec/storybook-addon-themr",
+  "version": "1.0.0",
+  "description": "storybook多主题插件",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "prepublish": "rimraf lib && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "react": "^15.6.0",
+    "prop-types": "^15.6.0"
+  }
+}
