@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "storybook多主题插件",
   "main": "./lib",
+  "files": [
+    "lib",
+    "src",
+    "register.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib",
