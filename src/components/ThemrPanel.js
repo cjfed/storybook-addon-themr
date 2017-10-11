@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {EVENT_ID} from '../';
+
 class ThemrPanel extends React.Component {
     constructor (props) {
         super(props);
@@ -15,7 +17,7 @@ class ThemrPanel extends React.Component {
     componentDidMount () {
         const {channel, api} = this.props;
 
-        channel.on('cjfec/themr/event/data', this.onLoadData);
+        channel.on(`${EVENT_ID}/data`, this.onLoadData);
     }
 
     onLoadData (data) {
@@ -35,7 +37,7 @@ class ThemrPanel extends React.Component {
     handleChange (value) {
         const {channel} = this.props;
         
-        channel.emit('cjfec/themr/event/change', value);
+        channel.emit(`${EVENT_ID}/change`, value);
     }
 
     render () {

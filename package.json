@@ -1,5 +1,5 @@
 {
-  "name": "@cjfec/storybook-addon-themr",
+  "name": "@cjfed/storybook-addon-themr",
   "version": "1.0.0",
   "description": "storybook多主题插件",
   "main": "./lib",
